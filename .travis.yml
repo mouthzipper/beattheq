@@ -9,7 +9,7 @@ before_install:
 
 install:
   # install required dependencies
-  - npm install -g grunt-cli
+  - npm install -g gulp-cli
   - npm install -g bower
   - npm install
   - bower install
