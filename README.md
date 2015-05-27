@@ -1,6 +1,8 @@
 # beattheq
 An app use to search pictures in flickr using javascript stacks.
 
+[![Build Status](https://travis-ci.org/mouthzipper/beattheq.svg?branch=master)](https://travis-ci.org/mouthzipper/beattheq)
+
 ## Prerequisites
 
 1. Install [Node.js](http://nodejs.org)
