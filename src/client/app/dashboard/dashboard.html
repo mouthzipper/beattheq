@@ -25,13 +25,13 @@
       	<div class="row" ng-if="dashboard.pages === 0">
 				<h2 class="text-center">No results found in {{ dashboard.searchText }}</h2>
 		</div>
-		<div class=" gallery">
+		<div class=" gallery " infinite-scroll="dashboard.seachFlickr()">
 			<div class="col-lg-3 col-md-3 col-xs-6 col-center image-holder" ng-repeat="photo in dashboard.photos">
 				<a class="thumbnail" ui-sref="detail({photoId: '{{photo.id}}'})">
 					<img class="thumb img-thumbnail img-responsive" ng-src="http://farm{{photo.farm}}.static.flickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_n.jpg">
 				</a>
 			</div>
 		</div>
-		 <div id="load-more">Load More</div>
+		 <!-- <div ng-click="	" id="load-more">Load More</div> -->
 	</div>
 </section>

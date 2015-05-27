@@ -9,7 +9,7 @@
 		self.API_KEY  = API_CONFIG.KEY;
 		self.API_URL = API_CONFIG.URL;
 
-		function searchFlickr( search, page ){
+		function searchFlickr( search ){
 
 			search = search || 'coffee';
 
@@ -20,7 +20,6 @@
 				per_page       : self.perPage,
 				format         : 'json',
 				nojsoncallback : 1,
-				page           : ( page !== null && page > 0 ) ? page : 1, // default to page 1
 				method         : ( search !== null && search.length > 0) ? 'flickr.photos.search' : 'flickr.photos.coffee'
 			};
 
