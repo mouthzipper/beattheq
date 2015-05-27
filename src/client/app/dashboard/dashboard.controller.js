@@ -8,6 +8,7 @@
 		var store = $window.localStorage;
 		var storedSearch = store.getItem( 'search' );
 		var storedPage   = store.getItem( 'page' );
+		var searchTags = [];
 
 		self.searchText;
 		self.pageNumber;

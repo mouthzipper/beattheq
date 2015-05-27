@@ -6,6 +6,7 @@
 		var self = this;
 		
 		getPhoto( $stateParams.photoId );
+		self.loading = true;
 		
 		function getPhoto( photoId ) {
 			FlickrService.getPhotoDetail( photoId )
@@ -17,6 +18,7 @@
 					self.nsid = data.owner.nsid;
 					self.comments = data.comments._content;
 					self.views = data.views;
+					self.loading = false;
 				} )
 		} 
 
